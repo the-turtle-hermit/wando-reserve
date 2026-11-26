@@ -268,3 +268,11 @@ footer{background:var(--navy-2);color:#d8e3e6;margin-top:80px}
 
 /* Shared Lowcountry masthead */
 .page-hero{min-height:610px;display:flex;align-items:center;padding:100px 0;background:linear-gradient(90deg,rgba(9,43,67,.86) 0%,rgba(9,43,67,.68) 39%,rgba(9,43,67,.18) 72%,rgba(9,43,67,.05) 100%),url("../images/hero-lowcountry.webp") center 56%/cover no-repeat;color:white;border:0}.page-hero .kicker{color:#f3dfb2}.page-hero .kicker:before{background:#f3dfb2}.page-hero h1{color:white;font-size:clamp(52px,7vw,88px);line-height:.97;max-width:900px}.page-hero p{color:rgba(255,255,255,.94);font-size:19px;max-width:660px}.hero-inner{padding-right:20px}.quick-item .icon-chip{display:grid}.quick-item>span:last-child{display:block}.quick-item>span:last-child>span{display:block}.powered{color:#f0d8a6;text-decoration:none}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #c89445;outline-offset:4px}.subnav .container{width:max-content;min-width:0;padding-inline:20px}.rule-table{overflow-wrap:anywhere}.standard-section{scroll-margin-top:150px}@media(max-width:700px){.page-hero{min-height:575px;background-position:63% 56%;padding:80px 0}.page-hero h1{font-size:53px;overflow-wrap:anywhere}.page-hero p{font-size:16px}.quick-item>span:last-child>span{display:none}.nav-links{max-height:calc(100vh - 72px);overflow:auto}}
+
+/* Keep waste schedule labels readable on narrow screens. */
+@media (max-width:700px){
+  .waste-schedule{table-layout:fixed;overflow-wrap:normal}
+  .waste-schedule th,.waste-schedule td{padding:12px 10px;word-break:normal;overflow-wrap:normal}
+  .waste-schedule th:first-child,.waste-schedule td:first-child{width:36%;hyphens:none}
+  .waste-schedule th:last-child,.waste-schedule td:last-child{overflow-wrap:break-word}
+}
